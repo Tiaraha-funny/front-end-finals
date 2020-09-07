@@ -2,6 +2,13 @@
   padding-block-start: 2rem;
 }
 
+.masthead {
+  background-color: #434CCC;
+  color: #FFFFFF;
+  @include flex;
+}
+
+
 .menu {
   width: 50%;
 }
