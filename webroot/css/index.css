@@ -21,3 +21,17 @@
   font-family: "dm_serif_display";
   font-style: normal;
   src: url("./fonts/dm_serif_display_400.woff2") format(woff2), url("./fonts/dm_serif_display_400.woff") format(woff); }
+
+body {
+  font-family: "dm_serif_display"; }
+
+header {
+  background-color: #434CCC;
+  color: #FFFFFF; }
+
+body {
+  font-family: "dm_serif_display"; }
+
+header {
+  background-color: #434CCC;
+  color: #FFFFFF; }
