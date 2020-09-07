@@ -8,7 +8,7 @@ aside {
   
   aside > a {
     font-family: "dm_sans";
-    font-size: 16px;
+    font-size: 24px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.5);
     mix-blend-mode: normal;
@@ -17,7 +17,5 @@ aside {
 
   
 @media (min-width: $querry) {
-    aside > a {
-        font-size: 24px;
-    }
+    
 }
