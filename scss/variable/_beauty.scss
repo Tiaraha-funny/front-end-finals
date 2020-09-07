@@ -1,3 +1,9 @@
+
+.section {
+  background-color: rgba(67, 76, 204, 0.05);
+  mix-blend-mode: normal;
+}
+
 .sliding {
   display: flex;
   overflow-x: auto;
@@ -27,6 +33,7 @@
   font-family: "dm_sans";
   font-size: 18px;
   line-height: 32px;
+  padding-block-end: 32px;
 }
 
 @media (min-width: $querry) {
