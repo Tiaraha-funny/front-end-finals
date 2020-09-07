@@ -12,11 +12,6 @@ h1 {
   padding: 2%;
 }
 
-header {
-  background-color: #434CCC;
-  color: #FFFFFF;
-  @include flex;
-}
 
 header > nav {
   display: none;
