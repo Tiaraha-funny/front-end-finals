@@ -40,10 +40,6 @@ header > nav {
 img {
   max-width: 100%; }
 
-main {
-  background-color: rgba(67, 76, 204, 0.05);
-  mix-blend-mode: normal; }
-
 @media (min-width: 1440px) {
   h1 {
     font-size: 40px;
@@ -64,7 +60,7 @@ main {
   justify-content: space-between; }
 
 .menu {
-  width: 50%; }
+  width: 40%; }
 
 [type="checkbox"] {
   visibility: hidden; }
@@ -129,6 +125,10 @@ aside > a {
   mix-blend-mode: normal;
   text-decoration: none; }
 
+.section {
+  background-color: rgba(67, 76, 204, 0.05);
+  mix-blend-mode: normal; }
+
 .sliding {
   display: flex;
   overflow-x: auto; }
@@ -153,8 +153,33 @@ aside > a {
 .heading > p {
   font-family: "dm_sans";
   font-size: 18px;
-  line-height: 32px; }
+  line-height: 32px;
+  padding-block-end: 32px; }
 
 @media (min-width: 1440px) {
   .slider {
     width: auto; } }
+
+table {
+  padding: 2rem;
+  padding-inline-start: 16px;
+  line-height: 24px; }
+
+tbody {
+  text-align: left; }
+
+th {
+  font-family: "dm_sans";
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal; }
+
+tr:nth-of-type(4) > td:nth-of-type(1) {
+  width: 35%; }
+
+tr {
+  font-family: "dm_sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px; }
