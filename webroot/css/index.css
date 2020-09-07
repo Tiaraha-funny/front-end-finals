@@ -40,6 +40,10 @@ header > nav {
 img {
   max-width: 100%; }
 
+main {
+  background-color: rgba(67, 76, 204, 0.05);
+  mix-blend-mode: normal; }
+
 @media (min-width: 1440px) {
   h1 {
     font-size: 40px;
@@ -119,12 +123,38 @@ aside > a::before {
 
 aside > a {
   font-family: "dm_sans";
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
   text-decoration: none; }
 
+.sliding {
+  display: flex;
+  overflow-x: auto; }
+
+.slider {
+  width: 137px;
+  flex-shrink: 0;
+  height: 100%;
+  margin-inline-end: 7px; }
+
+.choosen__image > img {
+  width: 100%; }
+
+.heading {
+  margin-inline-start: 1.5rem; }
+
+.heading > h2 {
+  font-size: 52px;
+  line-height: 64px;
+  max-width: 330px; }
+
+.heading > p {
+  font-family: "dm_sans";
+  font-size: 18px;
+  line-height: 32px; }
+
 @media (min-width: 1440px) {
-  aside > a {
-    font-size: 24px; } }
+  .slider {
+    width: auto; } }
