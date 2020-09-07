@@ -34,13 +34,6 @@ h1 {
   line-height: 32px;
   padding: 2%; }
 
-header {
-  background-color: #434CCC;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
 header > nav {
   display: none; }
 
@@ -58,6 +51,13 @@ img {
 
 .masthead__icon--menu {
   padding-block-start: 2rem; }
+
+.masthead {
+  background-color: #434CCC;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .menu {
   width: 50%; }
