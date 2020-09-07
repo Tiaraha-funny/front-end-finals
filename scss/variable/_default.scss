@@ -1,37 +1,38 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "dm_serif_display";
+  margin: 0;
+  padding: 0;
+  font-family: "dm_serif_display";
+  box-sizing: border-box;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 32px;
-    padding: 2%;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 2%;
 }
 
 header {
-    background-color: #434CCC;
-    color: #FFFFFF;
-    @include flex;
+  background-color: #434CCC;
+  color: #FFFFFF;
+  @include flex;
 }
 
 header > nav {
-    display: none;
+  display: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: $querry) {
   h1 {
-    font-size: 40px;
-    line-height: 48px;
+  font-size: 40px;
+  line-height: 48px;
   }
 
   header > nav {
-    @include flex;
+  @include flex;
   }
 }
