@@ -1,0 +1,36 @@
+.sliding {
+  display: flex;
+  overflow-x: auto;
+  }
+  
+.slider {
+  width: 137px;
+  flex-shrink: 0;
+  height: 100%;
+  margin-inline-end: 7px;
+}
+
+.choosen__image > img {
+  width: 100%;
+}
+
+.heading {
+  margin-inline-start: 1.5rem;
+}
+.heading > h2 {
+  font-size: 52px;
+  line-height: 64px;
+  max-width: 330px;
+}
+
+.heading > p {
+  font-family: "dm_sans";
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media (min-width: $querry) {
+  .slider {
+    width: auto;
+  }
+}
