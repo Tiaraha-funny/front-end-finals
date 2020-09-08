@@ -1,0 +1,72 @@
+.third__section {
+  padding-inline-start: 16px;
+  padding-block-start: 32px;
+}
+
+.thirst__secton--heading > h4 {
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.thirst__secton--heading > p {
+  @include blend_mode;
+}
+
+.intro__lists--icons {
+  @include flex_no_space;
+  padding: 0;
+}
+
+.intro__lists--icons > li {
+  list-style: none;
+}
+
+.intro__lists--icons > li > a {
+  text-decoration: none;
+}
+
+.navigation {
+  padding-block-start: 32px;
+  padding-block-end: 32px;
+}
+
+.navigation__lists {
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.bold > a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.light__link > li > a {
+  @include blend_mode;
+  text-decoration: none;
+}
+
+.food > p:nth-of-type(1),
+.experiece > p:nth-of-type(1) {
+  @include blend_mode;
+  margin-inline-start: 208px;
+  margin-block-start: -80px;
+}
+
+.food > p:nth-of-type(2),
+.experiece > p:nth-of-type(2) {
+  margin-inline-start:  208px;
+  margin-block-start: 16px;
+  padding-block-end: 32px;
+}
+
+.food::before {
+  content: url(../images/woman_xs.jpg);
+}
+
+.experiece::before {
+  content: url(/webroot/images/passage_xs.jpg);
+}
+
