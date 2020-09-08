@@ -16,10 +16,7 @@
 }
 
 .section__main--subdescription {
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: normal;
+  @include blend_mode;
 }
 
 .lists__icons {
@@ -51,12 +48,8 @@
 }
 
 em {
-  font-family: "dm_sans";
-  font-size: 16px;
+  @include blend_mode;
   font-style: inherit;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: normal;
 }
 
 @media (min-width: $querry) {
