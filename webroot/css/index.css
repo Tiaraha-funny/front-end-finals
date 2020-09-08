@@ -364,7 +364,7 @@ em {
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
   margin-inline-start: 208px;
-  margin-block-start: -80px; }
+  margin-block-start: -100px; }
 
 .food > p:nth-of-type(2),
 .experiece > p:nth-of-type(2) {
@@ -377,6 +377,16 @@ em {
 
 .experiece::before {
   content: url(/webroot/images/passage_xs.jpg); }
+
+@media (min-width: 1440px) {
+  .third__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .thirst__secton--heading {
+    max-width: 270px; }
+  .aside {
+    padding-inline-end: 80px; } }
 
 footer {
   margin-inline-start: 16px;
