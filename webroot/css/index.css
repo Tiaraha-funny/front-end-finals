@@ -222,7 +222,10 @@ em {
   .section__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-inline-start: 140px; }
+  .section__container--table--lists {
+    width: 100%; }
   .section__main {
     max-width: 570px;
     padding-inline-end: 64px; } }
@@ -269,7 +272,7 @@ em {
   mix-blend-mode: normal; }
 
 .second__section > button {
-  padding: 16px;
+  padding: 12px;
   background-color: #434ccc;
   border-radius: 5px;
   width: 50%;
@@ -277,7 +280,8 @@ em {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-block-start: 16px; }
 
 @media (min-width: 1440px) {
   .latest__heading > h3 {
