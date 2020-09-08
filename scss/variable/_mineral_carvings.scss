@@ -37,8 +37,35 @@
   width: 55%;
 }
 
+.section__container--table--lists {
+  @include flex;
+}
+
+.first__table,
+.seconde__table {
+  padding: 7%;
+}
+
+.seconde__table {
+  width: 80%;
+}
+
+em {
+  font-family: "dm_sans";
+  font-size: 16px;
+  font-style: inherit;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+}
+
 @media (min-width: $querry) {
   .section__container {
     @include flex;
+  }
+
+  .section__main {
+    max-width: 570px;
+    padding-inline-end: 64px;
   }
 }
