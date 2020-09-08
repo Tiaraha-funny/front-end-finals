@@ -1,0 +1,44 @@
+.section__main {
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+}
+.section__main--heading > h3 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.section__main--heading ~ p {
+  font-family: "dm_sans";
+}
+
+.section__main--description {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.section__main--subdescription {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+}
+
+.lists__icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.lists__icons li {
+  list-style: none;
+}
+
+.icon {
+  width: 55%;
+}
+
+@media (min-width: $querry) {
+  .section__container {
+    @include flex;
+  }
+}
