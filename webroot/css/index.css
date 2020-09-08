@@ -181,7 +181,8 @@ aside > a {
   line-height: 32px; }
 
 .section__main--subdescription {
-  font-size: 16px;
+  font-family: "dm_sans";
+  font-size: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal; }
@@ -212,11 +213,11 @@ aside > a {
 
 em {
   font-family: "dm_sans";
-  font-size: 16px;
-  font-style: inherit;
+  font-size: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: normal; }
+  mix-blend-mode: normal;
+  font-style: inherit; }
 
 @media (min-width: 1440px) {
   .section__container {
@@ -266,7 +267,8 @@ em {
   border-radius: 5px; }
 
 #placeholder {
-  font-size: 16px;
+  font-family: "dm_sans";
+  font-size: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal; }
@@ -304,3 +306,74 @@ em {
     max-width: 170px;
     max-height: 60px;
     margin-block-start: 76px; } }
+
+.third__section {
+  padding-inline-start: 16px;
+  padding-block-start: 32px; }
+
+.thirst__secton--heading > h4 {
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase; }
+
+.thirst__secton--heading > p {
+  font-family: "dm_sans";
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal; }
+
+.intro__lists--icons {
+  display: flex;
+  flex-direction: row;
+  padding: 0; }
+
+.intro__lists--icons > li {
+  list-style: none; }
+
+.intro__lists--icons > li > a {
+  text-decoration: none; }
+
+.navigation {
+  padding-block-start: 32px;
+  padding-block-end: 32px; }
+
+.navigation__lists {
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+  padding: 0; }
+
+.bold > a {
+  color: #000000;
+  text-decoration: none; }
+
+.light__link > li > a {
+  font-family: "dm_sans";
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  text-decoration: none; }
+
+.food > p:nth-of-type(1),
+.experiece > p:nth-of-type(1) {
+  font-family: "dm_sans";
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  margin-inline-start: 208px;
+  margin-block-start: -80px; }
+
+.food > p:nth-of-type(2),
+.experiece > p:nth-of-type(2) {
+  margin-inline-start: 208px;
+  margin-block-start: 16px;
+  padding-block-end: 32px; }
+
+.food::before {
+  content: url(../images/woman_xs.jpg); }
+
+.experiece::before {
+  content: url(/webroot/images/passage_xs.jpg); }
