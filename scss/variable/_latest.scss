@@ -1,0 +1,89 @@
+.second__section {
+  background-color: #ffdd78;
+  padding: 1rem;
+  padding-block-start: 80px;
+}
+
+.latest__heading > a {
+  font-family: "dm_sans";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.latest__heading > h3 {
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 294px;
+}
+
+.latest__email {
+  font-family: "dm_sans";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.latest__email ~ input {
+  width: 100%;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+}
+
+.second__section > button {
+  padding: 16px;
+  background-color: #434ccc;
+  border-radius: 5px;
+
+  width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: $querry) {
+  .latest__heading > h3 {
+    font-size: 52px;
+    line-height: 64px;
+    max-width: 382px;
+  }
+
+  .second__section {
+    @include flex;
+    padding-inline-end: 64px;
+    padding-inline-start: 192px;
+  }
+
+  .second__section > form {
+    margin-block-start: 16px;
+    margin-inline-start: 432px;
+  }
+
+  .latest__email ~ input {
+    width: 346px;
+    padding: 22px;
+  }
+
+  .second__section > button {
+    max-width: 170px;
+    max-height: 60px;
+    margin-block-start: 76px;
+  }
+}
