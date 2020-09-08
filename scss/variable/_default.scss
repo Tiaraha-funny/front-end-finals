@@ -20,6 +20,12 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+}
+
 
 @media (min-width: $querry) {
   h1 {
