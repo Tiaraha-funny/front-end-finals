@@ -1,9 +1,22 @@
 $format1: format(woff);
 $format2: format(woff2);
-$querry : 1440px;
+$querry: 1440px;
 
 @mixin flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex_no_space {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin blend_mode {
+  font-family: "dm_sans";
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
 }
