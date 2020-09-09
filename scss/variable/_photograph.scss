@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+.light__link {
+  padding-block-end: 48px;
+}
+
 .light__link > li > a {
   @include blend_mode;
   text-decoration: none;
