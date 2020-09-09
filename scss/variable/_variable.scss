@@ -1,6 +1,7 @@
 $format1: format(woff);
 $format2: format(woff2);
 $querry: 1440px;
+$allnones : none;
 
 @mixin flex {
   display: flex;
