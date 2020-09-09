@@ -10,6 +10,7 @@
 .section__main--description {
   font-size: 18px;
   line-height: 32px;
+  max-width: 570px;
 }
 
 .section__main--subdescription {
@@ -35,13 +36,13 @@
   @include flex;
 }
 
-.first__table,
-.seconde__table {
-  padding: 7%;
+
+.first__table {
+  padding-inline-start: 0;
 }
 
 .seconde__table {
-  width: 80%;
+  width: 50%;
 }
 
 em {
@@ -52,15 +53,12 @@ em {
 @media (min-width: $querry) {
   .section__container {
     @include flex;
-    padding-inline-start: 140px;
+    padding-block-start: 64px;
+    padding-block-end: 32px;
   }
 
   .section__container--table--lists {
     width: 100%;
   }
 
-  .section__main {
-    max-width: 570px;
-    padding-inline-end: 64px;
-  }
 }
