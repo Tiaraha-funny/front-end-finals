@@ -2,6 +2,8 @@
 .first__section {
   background-color: rgba(67, 76, 204, 0.05);
   mix-blend-mode: normal;
+  padding-inline-end: 64px;
+  padding-inline-start: 64px;
 }
 
 .sliding {
@@ -20,9 +22,6 @@
   width: 100%;
 }
 
-.heading {
-  margin-inline-start: 1.5rem;
-}
 .heading > h2 {
   font-size: 52px;
   line-height: 64px;
