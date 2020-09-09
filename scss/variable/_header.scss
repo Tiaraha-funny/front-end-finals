@@ -2,16 +2,18 @@
 
 :root {
   --position: absolute;
+  --pixels: #{$pix};
+  --white: #{$whitecl};
 }
 
 .masthead__icon--menu {
-  padding-block-start: 2rem;
+  padding-block-start: calc(var(--pixels) - 32px);
 }
 
 .masthead {
   background-color: #434CCC;
-  color: #FFFFFF;
-  padding-inline-start: 16px;
+  color: var(--white);
+  padding-inline-start: calc(var(--pixels) - 48px);
   @include flex;
 }
 
@@ -21,8 +23,8 @@
 
 [type="checkbox"] {
   position: var(--position);
-  right: 14px;
-  top: 35px;
+  right: calc(var(--pixels) - 50px);
+  top: calc(var(--pixels) - 29px);
   width: 1px;
 }
 
@@ -31,15 +33,15 @@
   background-color: #000000;
   right: 0;
   opacity: 0.6;
-  top: 78px;
-  height: 236px;
+  top: calc(var(--pixels) + 14px);
+  height: calc(var(--pixels) + 172px);
 }
 
 [type="checkbox"]:checked ~ header > nav {
   display: block;
   position: var(--position);
-  right: 64px;
-  top: 90px;
+  right: var(--pixels);
+  top: calc(var(--pixels) + 26px);
   list-style: $allnones;
 }
 
@@ -48,13 +50,13 @@
 }
 .lists {
   list-style: $allnones;
-  line-height: 45px;
+  line-height: calc(var(--pixels) - 19px);
   margin: 0;
   padding: 0;
 }
 .lists > li > a {
   text-decoration: $allnones;
-  color: #ffffff;
+  color:  var(--white);
 }
 
 
@@ -67,26 +69,26 @@
     display: $allnones;
   }
   .masthead__navigation {
-    margin-inline-end: 64px;
-    margin-block-start: 64px;
+    margin-inline-end: var(--pixels);
+    margin-block-start: var(--pixels);
   }
   .lists {
     @include flex;
   }
   .lists > li {
     list-style: $allnones;
-    margin-inline-end: 3rem;
+    margin-inline-end: calc(var(--pixels) - 16px);
   }
   .lists > li > a {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
+    font-size: calc(var(--pixels) - 48px);
+    line-height: calc(var(--pixels) - 40px);
+    text-decoration: $allnones;
     text-transform: uppercase;
     color: #ffffff;
   }
 
   .bold1 {
-    display: none;
+    display: $allnones;
   }
 }
