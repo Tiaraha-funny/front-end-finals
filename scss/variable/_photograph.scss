@@ -28,14 +28,14 @@
 
 .navigation {
   padding-block-start: 32px;
-  padding-block-end: 32px;
 }
 
 .navigation__lists {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 37px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .bold > a {
@@ -73,11 +73,15 @@
 @media (min-width: $querry) { 
   .third__section {
     @include flex;
+    padding-inline-start: 64px;
+    padding-block-start: 64px;
+    padding-block-end: 64px;
   }
   .thirst__secton--heading {
     max-width: 270px;
   }
   .aside {
-    padding-inline-end: 80px;
+    padding-inline-end: 64px;
+    padding-block-start: 42px;
   }
 }
