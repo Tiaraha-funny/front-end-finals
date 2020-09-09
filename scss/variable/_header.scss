@@ -5,6 +5,7 @@
 .masthead {
   background-color: #434CCC;
   color: #FFFFFF;
+  padding-inline-start: 16px;
   @include flex;
 }
 
@@ -17,7 +18,7 @@
   display: block;
 }
 
-.masthead__navigation > .lists{
+.lists{
   display: none;
 }
 
@@ -57,7 +58,8 @@
     display: none;
   }
   .masthead__navigation {
-    top: 59px;
+    margin-inline-end: 64px;
+    margin-block-start: 64px;
   }
   .lists {
     @include flex;
@@ -67,6 +69,7 @@
     margin-inline-end: 3rem;
   }
   .lists > li > a {
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
