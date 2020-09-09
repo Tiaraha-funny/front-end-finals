@@ -1,18 +1,18 @@
 @font-face {
   font-weight: 400;
-  font-family: "dm_sans";
+  font-family: "DM Sans";
   font-style: normal;
   src: url("./fonts/dm_sans_400.woff2") format(woff2), url("./fonts/dm_sans_400.woff") format(woff); }
 
 @font-face {
   font-weight: 700;
-  font-family: "dm_sans";
+  font-family: "DM Sans";
   font-style: normal;
   src: url("./fonts/dm_sans_700.woff2") format(woff2), url("./fonts/dm_sans_700.woff") format(woff); }
 
 @font-face {
   font-weight: 400;
-  font-family: "dm_sans";
+  font-family: "DM Sans";
   font-style: normal;
   src: url("./fonts/dm_sans_400_italic.woff2") format(woff2), url("./fonts/dm_sans_400_italic.woff") format(woff); }
 
@@ -25,7 +25,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "dm_serif_display";
+  font-family: "DM Serif Display";
   box-sizing: border-box; }
 
 h1 {
@@ -34,6 +34,9 @@ h1 {
   line-height: 32px;
   padding: 2%; }
 
+p, a {
+  font-family: "DM Sans"; }
+
 img {
   max-width: 100%; }
 
@@ -41,6 +44,9 @@ figure {
   margin: 0;
   padding-block-start: 2rem;
   padding-block-end: 2rem; }
+
+span {
+  display: none; }
 
 @media (min-width: 1440px) {
   h1 {
@@ -68,15 +74,10 @@ figure {
   display: block; }
 
 .masthead__navigation > .lists {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -280px;
-  width: 250px;
-  height: 400px;
-  color: #FFFFFF;
-  z-index: 3;
-  transform: translateX(-50%); }
+  display: none; }
+
+[type="checkbox"]:checked ~ .navigation {
+  transform: translateX(0%); }
 
 [type="checkbox"]:checked ~ header label {
   position: absolute;
@@ -103,7 +104,6 @@ figure {
     list-style: none;
     margin-inline-end: 3rem; }
   .lists > li > a {
-    font-family: "dm_sans";
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
@@ -118,7 +118,7 @@ aside > a::before {
   padding: 1rem; }
 
 aside > a {
-  font-family: "dm_sans";
+  font-family: "DM Sans";
   font-size: 24px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
@@ -148,10 +148,9 @@ aside > a {
 .heading > h2 {
   font-size: 52px;
   line-height: 64px;
-  max-width: 330px; }
+  max-width: 477px; }
 
 .heading > p {
-  font-family: "dm_sans";
   font-size: 18px;
   line-height: 32px;
   padding-block-end: 32px; }
@@ -167,9 +166,6 @@ aside > a {
 .section__main--heading > h3 {
   font-size: 40px;
   line-height: 48px; }
-
-.section__main--heading ~ p {
-  font-family: "dm_sans"; }
 
 .section__main--description {
   font-size: 18px;
@@ -232,7 +228,6 @@ em {
   padding-block-start: 80px; }
 
 .latest__heading > a {
-  font-family: "dm_sans";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.3em;
@@ -243,10 +238,10 @@ em {
 .latest__heading > h3 {
   font-size: 40px;
   line-height: 48px;
-  max-width: 294px; }
+  max-width: 314px; }
 
 .latest__email {
-  font-family: "dm_sans";
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 12px;
   line-height: 60px;
@@ -284,7 +279,7 @@ em {
   .latest__heading > h3 {
     font-size: 52px;
     line-height: 64px;
-    max-width: 382px; }
+    max-width: 403px; }
   .second__section {
     display: flex;
     flex-direction: row;
