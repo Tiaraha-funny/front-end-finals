@@ -3,6 +3,11 @@ footer {
   padding-block-end: 32px;
 }
 
+.laaqiq, .onja {
+  @include blend_mode;
+  text-decoration: none;
+}
+
 .main__footer {
   @include blend_mode;
 }
