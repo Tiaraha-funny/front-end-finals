@@ -62,15 +62,17 @@ span {
     justify-content: space-between; } }
 
 :root {
-  --position: absolute; }
+  --position: absolute;
+  --pixels: 64px;
+  --white: #ffffff; }
 
 .masthead__icon--menu {
-  padding-block-start: 2rem; }
+  padding-block-start: calc(var(--pixels) - 32px); }
 
 .masthead {
   background-color: #434CCC;
-  color: #FFFFFF;
-  padding-inline-start: 16px;
+  color: var(--white);
+  padding-inline-start: calc(var(--pixels) - 48px);
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -80,8 +82,8 @@ span {
 
 [type="checkbox"] {
   position: var(--position);
-  right: 14px;
-  top: 35px;
+  right: calc(var(--pixels) - 50px);
+  top: calc(var(--pixels) - 29px);
   width: 1px; }
 
 [type="checkbox"]:checked ~ header label {
@@ -89,14 +91,14 @@ span {
   background-color: #000000;
   right: 0;
   opacity: 0.6;
-  top: 78px;
-  height: 236px; }
+  top: calc(var(--pixels) + 14px);
+  height: calc(var(--pixels) + 172px); }
 
 [type="checkbox"]:checked ~ header > nav {
   display: block;
   position: var(--position);
-  right: 64px;
-  top: 90px;
+  right: var(--pixels);
+  top: calc(var(--pixels) + 26px);
   list-style: none; }
 
 .bold1 {
@@ -104,13 +106,13 @@ span {
 
 .lists {
   list-style: none;
-  line-height: 45px;
+  line-height: calc(var(--pixels) - 19px);
   margin: 0;
   padding: 0; }
 
 .lists > li > a {
   text-decoration: none;
-  color: #ffffff; }
+  color: var(--white); }
 
 .menu {
   width: 50%; }
@@ -119,19 +121,19 @@ span {
   .masthead__icon--menu {
     display: none; }
   .masthead__navigation {
-    margin-inline-end: 64px;
-    margin-block-start: 64px; }
+    margin-inline-end: var(--pixels);
+    margin-block-start: var(--pixels); }
   .lists {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   .lists > li {
     list-style: none;
-    margin-inline-end: 3rem; }
+    margin-inline-end: calc(var(--pixels) - 16px); }
   .lists > li > a {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(var(--pixels) - 48px);
+    line-height: calc(var(--pixels) - 40px);
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff; }
