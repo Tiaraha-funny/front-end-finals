@@ -17,12 +17,9 @@ h1 {
   padding: 2%;
 }
 
-p, a {
+p,
+a {
   font-family: "DM Sans";
-}
-
-header > nav {
-  // display: none;
 }
 
 img {
@@ -41,11 +38,11 @@ span {
 
 @media (min-width: $querry) {
   h1 {
-  font-size: 40px;
-  line-height: 48px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   header > nav {
-  @include flex;
+    @include flex;
   }
 }
