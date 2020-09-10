@@ -1,7 +1,7 @@
 $format1: format(woff);
 $format2: format(woff2);
 $querry: 1440px;
-$allnones : none;
+$allnones: none;
 $pix: 64px;
 $whitecl: #ffffff;
 
@@ -22,4 +22,13 @@ $whitecl: #ffffff;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
+}
+
+@mixin before {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 75px;
+  height: 45px;
+  border-radius: 8px;
 }
