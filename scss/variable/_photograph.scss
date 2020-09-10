@@ -1,14 +1,16 @@
+@import "variable";
+
 :root {
 }
 
 .third__section {
   padding-inline-start: 16px;
-  padding-block-start: 32px;
+  padding-block-start: calc(var(--min-width) + 16px);
 }
 
 .thirst__secton--heading > h4 {
   font-size: 24px;
-  line-height: 32px;
+  line-height: calc(var(--min-width) + 16px);
   text-transform: uppercase;
 }
 
@@ -30,7 +32,7 @@
 }
 
 .navigation {
-  padding-block-start: 32px;
+  padding-block-start: calc(var(--min-width) + 16px);
 }
 
 .navigation__lists {
@@ -89,9 +91,9 @@
 @media (min-width: $querry) {
   .third__section {
     @include flex;
-    padding-inline-start: 64px;
-    padding-block-start: 64px;
-    padding-block-end: 64px;
+    padding-inline-start: calc(var(--min-width) + 48px);
+    padding-block-start: calc(var(--min-width) + 48px);
+    padding-block-end: calc(var(--min-width) + 48px);
   }
 
   .thirst__secton--heading {
@@ -99,7 +101,7 @@
   }
   
   .aside {
-    padding-inline-end: 64px;
+    padding-inline-end: calc(var(--min-width) + 48px);
     padding-block-start: 42px;
   }
 }
