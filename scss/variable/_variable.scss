@@ -4,6 +4,9 @@ $querry: 1440px;
 $allnones: none;
 $pix: 64px;
 $whitecl: #ffffff;
+$width-percentage: 100%;
+$width-pixels: 350px;
+$min-width: 16px;
 
 @mixin flex {
   display: flex;
