@@ -1,33 +1,35 @@
+@import "variable";
+
 .first__section {
   background-color: rgba(67, 76, 204, 0.05);
   mix-blend-mode: normal;
-  padding-inline-end: 16px;
-  padding-inline-start: 16px;
+  padding-inline-end: var(--min-width);
+  padding-inline-start: var(--min-width);
 }
 
 .choosen__image > img {
-  width: 100%;
+  width: var(--width);
 }
 
 .heading > h2 {
-  font-size: 52px;
-  line-height: 64px;
-  width: 350px;
+  font-size: calc(var(--width-P) - 298px);
+  line-height: calc(var(--width-P) - 286px);
+  width: var(--width-P);
 }
 
 .heading > p {
-  font-size: 18px;
-  line-height: 32px;
-  padding-block-end: 32px;
+  font-size: calc(var(--min-width) + 2px);
+  line-height: calc(var(--min-width) + 16px);
+  padding-block-end: calc(var(--min-width) + 16px);
 }
 
 @media (min-width: $querry) {
   .slider {
-    width: 12.05%;
+    width: calc(var(--width) - 87.95%);
   }
   
   .first__section {
-    padding-inline-end: 64px;
-    padding-inline-start: 64px;
+    padding-inline-end: calc(var(--min-width) + 48px);
+    padding-inline-start: calc(var(--min-width) + 48px);
   }
 }
