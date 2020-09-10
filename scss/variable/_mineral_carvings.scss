@@ -48,6 +48,11 @@ em {
 }
 
 @media (min-width: $querry) {
+  .section__main--heading > h3 {
+    font-size: 52px;
+    line-height: 64px;
+    margin-block-start: calc(var(--min-width) - 16px);  
+  }
   .section__container {
     @include flex;
     padding-block-start: calc(var(--min-width) + 48px);
