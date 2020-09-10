@@ -3,7 +3,8 @@ footer {
   padding-block-end: 32px;
 }
 
-.laaqiq, .onja {
+.laaqiq,
+.onja {
   @include blend_mode;
   text-decoration: none;
 }
@@ -16,6 +17,7 @@ footer {
   footer {
     padding-block-start: 32px;
   }
+  
   .main__footer {
     @include flex;
     margin-inline-end: 80px;
