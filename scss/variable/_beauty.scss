@@ -24,6 +24,12 @@
 }
 
 @media (min-width: $querry) {
+  .heading > h2 {
+    width: 479px;
+    font-size: 72px;
+    line-height: 80px;
+  }
+
   .slider {
     width: calc(var(--width) - 87.95%);
   }
