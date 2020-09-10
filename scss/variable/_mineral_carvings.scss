@@ -1,3 +1,5 @@
+@import "variable";
+
 .section__main--heading > h3 {
   font-size: 40px;
   line-height: 48px;
@@ -5,7 +7,7 @@
 
 .section__main--description {
   font-size: 18px;
-  line-height: 32px;
+  line-height: calc(var(--min-width) + 16px);
   max-width: 570px;
 }
 
@@ -48,8 +50,8 @@ em {
 @media (min-width: $querry) {
   .section__container {
     @include flex;
-    padding-block-start: 64px;
-    padding-block-end: 32px;
+    padding-block-start: calc(var(--min-width) + 48px);
+    padding-block-end: calc(var(--min-width) + 16px);
   }
 
   .section__container--table--lists {
