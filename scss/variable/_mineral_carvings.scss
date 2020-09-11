@@ -1,18 +1,22 @@
 @import "variable";
 
 .section__main--heading > h3 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: calc(var(--min-width) + 24px);
+  line-height:  calc(var(--min-width) * 3);
 }
 
 .section__main--description {
-  font-size: 18px;
-  line-height: calc(var(--min-width) + 16px);
-  max-width: 570px;
+  font-size: calc(var(--min-width) + 2px);
+  line-height: calc(var(--min-width) * 2);
+  max-width: calc(var(--width-P) + 220px);
 }
 
 .section__main--subdescription {
   @include blend_mode;
+}
+
+.section__container {
+  padding-block-start: calc(var(--min-width) * 3);
 }
 
 .lists__icons {
@@ -27,7 +31,7 @@
 }
 
 .icon {
-  width: 55%;
+  width: calc(var(--width) - 45%);
 }
 
 .section__container--table--lists {
@@ -39,7 +43,7 @@
 }
 
 .seconde__table {
-  width: 50%;
+  width: calc(var(--width) - 50%);
 }
 
 em {
@@ -49,17 +53,17 @@ em {
 
 @media (min-width: $querry) {
   .section__main--heading > h3 {
-    font-size: 52px;
-    line-height: 64px;
-    margin-block-start: calc(var(--min-width) - 16px);  
+    font-size: calc(var(--min-width) + 36px);
+    line-height: calc(var(--min-width) * 4);
+    margin-block-start: calc(var(--min-width) - 16px); 
   }
   .section__container {
     @include flex;
-    padding-block-start: calc(var(--min-width) + 48px);
-    padding-block-end: calc(var(--min-width) + 16px);
+    padding-block-start: calc(var(--min-width) * 4);
+    padding-block-end: calc(var(--min-width) * 2);
   }
 
   .section__container--table--lists {
-    width: 100%;
+    width: var(--width);
   }
 }
