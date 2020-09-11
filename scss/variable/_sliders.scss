@@ -1,18 +1,17 @@
 .sliding:not(.ChoosenImg) {
   display: flex;
   overflow-x: auto;
-  padding-block-end: 48px;
 }
 
 .slide {
   width: 137px;
   flex-shrink: 0;
-  height: 100%;
+  height: var(--width);
   margin-inline-end: 7px;
 }
 
 .ChoosenImg > img {
-  width: 100%;
+  width: var(--width);
 }
 
 @media (min-width: $querry) {
