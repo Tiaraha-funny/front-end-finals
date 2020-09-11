@@ -3,6 +3,7 @@
 :root {
   --position: absolute;
   --white: #{$whitecl};
+  --orange: #{$orangecl};
   --width: #{$width-percentage};
   --width-P: #{$width-pixels};
   --pixels: #{$pix};
@@ -33,8 +34,10 @@ a {
   color: $whitecl;
 }
 
+ul > div > li a:hover,
+ul > li a:hover,
 a:hover {
-  color: #FFDD78;
+  color: var(--orange);
 }
 
 img {
