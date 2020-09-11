@@ -16,7 +16,7 @@
 }
 
 .section__container {
-  padding-block-start: calc(var(--min-width) * 3);
+  padding-top: calc(var(--min-width) * 3);
 }
 
 .lists__icons {
@@ -39,7 +39,7 @@
 }
 
 .first__table {
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
 .seconde__table {
@@ -55,12 +55,12 @@ em {
   .section__main--heading > h3 {
     font-size: calc(var(--min-width) + 36px);
     line-height: calc(var(--min-width) * 4);
-    margin-block-start: calc(var(--min-width) - 16px); 
+    margin-top: calc(var(--min-width) - 16px); 
   }
   .section__container {
     @include flex;
-    padding-block-start: calc(var(--min-width) * 4);
-    padding-block-end: calc(var(--min-width) * 2);
+    padding-top: calc(var(--min-width) * 4);
+    padding-bottom: calc(var(--min-width) * 2);
   }
 
   .section__container--table--lists {
