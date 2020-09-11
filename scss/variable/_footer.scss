@@ -1,8 +1,8 @@
 @import "variable";
 
 footer {
-  margin-inline-start: var(--min-width);
-  padding-block-end: calc(var(--min-width) * 2);
+  margin-left: var(--min-width);
+  padding-bottom: calc(var(--min-width) * 2);
 }
 
 .laaqiq,
@@ -17,11 +17,11 @@ footer {
 
 @media (min-width: $querry) {
   footer {
-    padding-block-start: calc(var(--min-width) * 2);
+    padding-top: calc(var(--min-width) * 2);
   }
   
   .main__footer {
     @include flex;
-    margin-inline-end: calc(var(--min-width) * 5);
+    margin-right: calc(var(--min-width) * 5);
   }
 }
