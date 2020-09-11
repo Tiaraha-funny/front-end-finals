@@ -2,13 +2,13 @@
 
 
 .masthead__icon--menu {
-  padding-block-start: calc(var(--pixels) - 32px);
+  padding-top: calc(var(--pixels) - 32px);
 }
 
 .masthead {
   background-color: #434ccc;
   color: var(--white);
-  padding-inline-start: calc(var(--pixels) - 48px);
+  padding-left: calc(var(--pixels) - 48px);
   @include flex;
 }
 
@@ -78,8 +78,8 @@
 
   .masthead__navigation {
     display: block;
-    margin-inline-end: var(--pixels);
-    margin-block-start: var(--pixels);
+    margin-right: var(--pixels);
+    margin-top: var(--pixels);
   }
 
   .lists {
@@ -88,7 +88,7 @@
 
   .lists > li {
     list-style: $allnones;
-    margin-inline-end: calc(var(--pixels) - var(--min-width));
+    margin-right: calc(var(--pixels) - var(--min-width));
   }
   
   .lists > li > a {
