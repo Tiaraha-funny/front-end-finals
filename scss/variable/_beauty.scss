@@ -25,7 +25,7 @@
 
 @media (min-width: $querry) {
   .heading > h2 {
-    width: calc(var(--width-P) + 129px);
+    max-width: calc(var(--width-P) + 129px);
     font-size: calc(var(--pixels) + 8px);
     line-height: calc(var(--min-width) * 5);
   }
