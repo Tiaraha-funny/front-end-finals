@@ -25,7 +25,7 @@ function Slider(slider) {
 
     if (modal.matches('.open')) {
       console.info('Modal already open');
-      return; //stop the function from running
+      return;
     }
 
     modal.classList.add('open');
