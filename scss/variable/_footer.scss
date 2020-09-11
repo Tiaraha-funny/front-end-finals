@@ -1,14 +1,14 @@
 @import "variable";
 
 footer {
-  margin-inline-start: 16px;
-  padding-block-end: calc(var(--min-width) + 16px);
+  margin-inline-start: var(--min-width);
+  padding-block-end: calc(var(--min-width) * 2);
 }
 
 .laaqiq,
 .onja {
   @include blend_mode;
-  text-decoration: none;
+  text-decoration: $allnones;
 }
 
 .main__footer {
@@ -17,11 +17,11 @@ footer {
 
 @media (min-width: $querry) {
   footer {
-    padding-block-start: calc(var(--min-width) + 16px);
+    padding-block-start: calc(var(--min-width) * 2);
   }
   
   .main__footer {
     @include flex;
-    margin-inline-end: 80px;
+    margin-inline-end: calc(var(--min-width) * 5);
   }
 }
