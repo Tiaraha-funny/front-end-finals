@@ -1,7 +1,9 @@
+@import "variable";
+
 .second__section {
   background-color: #ffdd78;
   padding: var(--min-width);
-  padding-block-start: calc(var(--min-width) * 5);
+  padding-top: calc(var(--min-width) * 5);
 }
 
 .latest__heading > a {
@@ -9,20 +11,20 @@
   line-height: var(--height);
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: $allnones;
   color: #000000;
 }
 
 .latest__heading > h3 {
   font-size: 40px;
   line-height: calc(var(--min-width) * 3);
-  max-width: calc(var(--min-width) - 36px);
+  max-width: calc(var(--width-P) - 36px);
 }
 
 .latest__email {
   font-family: "DM Sans";
   font-weight: 700;
-  font-size: calc(var(--min-width) + 4px);
+  font-size: var(--min-width);
   line-height: calc(var(--pixels) - 4px);
   text-transform: uppercase;
   color: #000000;
@@ -51,7 +53,7 @@
   line-height: var(--height);
   text-align: center;
   color: #ffffff;
-  margin-block-start: var(--min-width);
+  margin-top: var(--min-width);
 }
 
 @media (min-width: $querry) {
@@ -63,22 +65,22 @@
 
   .second__section {
     @include flex;
-    padding-inline-end: var(--pixels);
-    padding-inline-start: calc(var(--pixels) - 1px);
+    padding-right: var(--pixels);
+    padding-top: calc(var(--pixels) - 1px);
   }
 
   .second__section > form {
-    margin-block-start: calc(var(--pixels) - 7px);
+    margin-top: calc(var(--pixels) - 7px);
+    margin-left: 315px;
   }
 
   .latest__email ~ input {
-    width: calc(var(--width-P) + 95px);
+    width: calc(var(--width-P) + 40px);
   }
 
   .second__section > button {
     max-width: calc(var(--width-P) - 128px);
     max-height: calc(var(--pixels) - 17px);
-    margin-block-start: calc(var(--pixels) + 53px);
-    margin-inline-start: -144px;
+    margin-top: calc(var(--pixels) + 53px);
   }
 }
