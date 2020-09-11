@@ -210,13 +210,15 @@ aside > a {
 
 .sliding:not(.ChoosenImg) {
   display: flex;
-  overflow-x: auto; }
+  overflow-x: auto;
+  opacity: 0.5; }
 
 .slide {
   width: 137px;
   flex-shrink: 0;
   height: var(--width);
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  margin-right: 10px; }
 
 .ChoosenImg > img {
   width: var(--width); }
@@ -262,7 +264,8 @@ aside > a {
   justify-content: space-between; }
 
 .first__table {
-  padding-left: 0; }
+  padding-left: 0;
+  width: 30%; }
 
 .seconde__table {
   width: calc(var(--width) - 50%); }
