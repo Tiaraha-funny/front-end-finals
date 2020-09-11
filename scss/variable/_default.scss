@@ -2,11 +2,12 @@
 
 :root {
   --position: absolute;
-  --pixels: #{$pix};
   --white: #{$whitecl};
   --width: #{$width-percentage};
   --width-P: #{$width-pixels};
+  --pixels: #{$pix};
   --min-width: #{$min-width};
+  --height: calc(var(--min-width) + 8px);
 }
 
 body {
@@ -18,8 +19,8 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: calc(var(--min-width) + 16px);
+  font-size: var(--height);
+  line-height: calc(var(--min-width) * 2);
   padding: 2%;
 }
 
@@ -29,7 +30,7 @@ a {
 }
 
 a {
-  color: #ffffff;
+  color: $whitecl;
 }
 
 a:hover {
@@ -37,13 +38,13 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  max-width: var(--width);
 }
 
 figure {
   margin: 0;
-  padding-block-start: calc(var(--min-width) + 16px);
-  padding-block-end: calc(var(--min-width) + 16px);
+  padding-block-start: calc(var(--min-width) * 2);
+  padding-block-end: calc(var(--min-width) * 2);
 }
 
 span {
@@ -52,8 +53,9 @@ span {
 
 @media (min-width: $querry) {
   h1 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: calc(var(--min-width) + 24px);
+    line-height: calc(var(--min-width) * 3);
+    padding-inline-start: calc(var(--pixels) - 10px);
   }
 
   header > nav {
