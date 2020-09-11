@@ -43,8 +43,8 @@ img {
 
 figure {
   margin: 0;
-  padding-block-start: calc(var(--min-width) * 2);
-  padding-block-end: calc(var(--min-width) * 2);
+  padding-top: calc(var(--min-width) * 2);
+  padding-bottom: calc(var(--min-width) * 2);
 }
 
 span {
@@ -55,7 +55,7 @@ span {
   h1 {
     font-size: calc(var(--min-width) + 24px);
     line-height: calc(var(--min-width) * 3);
-    padding-inline-start: calc(var(--pixels) - 10px);
+    padding-left: calc(var(--pixels) - 10px);
   }
 
   header > nav {
