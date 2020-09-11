@@ -19,7 +19,7 @@ footer {
   footer {
     padding-top: calc(var(--min-width) * 2);
   }
-  
+
   .main__footer {
     @include flex;
     margin-right: calc(var(--min-width) * 5);

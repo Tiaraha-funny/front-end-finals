@@ -1,7 +1,7 @@
 @import "variable";
 
 .second__section {
-  background-color: #ffdd78;
+  background-color: var(--orange);
   padding: var(--min-width);
   padding-top: calc(var(--min-width) * 5);
 }
@@ -33,7 +33,7 @@
 .latest__email ~ input {
   width: var(--width);
   padding: var(--min-width);
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid #dadada;
   box-sizing: border-box;
   border-radius: 5px;
@@ -47,13 +47,18 @@
   padding: calc(var(--min-width) - 4px);
   background-color: #434ccc;
   border-radius: 5px;
+  border: none;
   width: 50%;
   font-weight: 700;
   font-size: var(--min-width);
   line-height: var(--height);
   text-align: center;
-  color: #ffffff;
+  color: $whitecl;
   margin-top: var(--min-width);
+}
+
+.second__section > button:hover {
+  color: var(--orange);
 }
 
 @media (min-width: $querry) {

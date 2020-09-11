@@ -4,6 +4,7 @@ $querry: 1440px;
 $allnones: none;
 $pix: 64px;
 $whitecl: #ffffff;
+$orangecl: #ffdd78;
 $width-percentage: 100%;
 $width-pixels: 350px;
 $min-width: 16px;
@@ -21,7 +22,7 @@ $min-width: 16px;
 
 @mixin blend_mode {
   font-family: "dm_sans";
-  font-size: 16px;
+  font-size: var(--min-width);
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
@@ -29,7 +30,7 @@ $min-width: 16px;
 
 @mixin before {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: var(--width);
   display: block;
   width: 75px;
   height: 45px;

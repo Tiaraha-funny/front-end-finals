@@ -2,7 +2,7 @@
 
 .section__main--heading > h3 {
   font-size: calc(var(--min-width) + 24px);
-  line-height:  calc(var(--min-width) * 3);
+  line-height: calc(var(--min-width) * 3);
 }
 
 .section__main--description {
@@ -27,7 +27,7 @@
 }
 
 .lists__icons li {
-  list-style: none;
+  list-style: $allnones;
 }
 
 .icon {
@@ -56,7 +56,7 @@ em {
   .section__main--heading > h3 {
     font-size: calc(var(--min-width) + 36px);
     line-height: calc(var(--min-width) * 4);
-    margin-top: calc(var(--min-width) - 16px); 
+    margin-top: calc(var(--min-width) - 16px);
   }
   .section__container {
     @include flex;

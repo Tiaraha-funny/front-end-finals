@@ -1,6 +1,5 @@
 @import "variable";
 
-
 .masthead__icon--menu {
   padding-top: calc(var(--pixels) - 32px);
 }
@@ -18,9 +17,9 @@
 
 [type="checkbox"] {
   position: var(--position);
-  right: calc(var(--pixels) - 50px);
+  right: calc(var(--pixels) - 37px);
   top: calc(var(--pixels) - 29px);
-  width: 1px;
+  width: 2px;
 }
 
 [type="checkbox"]:checked ~ header label {
@@ -28,15 +27,38 @@
   background-color: #000000;
   right: 0;
   opacity: 0.6;
+  width: 100%;
+  height: 50%;
   top: calc(var(--pixels) + 14px);
-  height: calc(var(--pixels) + 172px);
-  transform: translateX(-100%);
-  transition: transform 1s;
+  transform: translateX(50%);
+  transition-timing-function: ease;
+  animation-name: menu;
+  animation-duration: 2s;
 }
 
-[type="checkbox"]:checked ~ header label:hover {
-  border-radius: 5px;
-  opacity: 0.8;
+@keyframes menu {
+  0% {
+    background-color: #000000;
+    opacity: 2;
+    left: -200px;
+    right: 200px;
+  }
+  25% {
+    background-color: var(--orange);
+    opacity: 1.5;
+    left: -100px;
+    right: 100px;
+  }
+  50% {
+    background-color: #000000;
+    opacity: 0.5;
+    left: 0px;
+    right: 0px;
+  }
+}
+
+[type="checkbox"]:checked ~ header nav > ul > li > a:hover {
+  color: var(--orange);
 }
 
 [type="checkbox"]:checked ~ header > nav {
@@ -44,10 +66,24 @@
   position: var(--position);
   right: var(--pixels);
   top: calc(var(--pixels) + 26px);
-  list-style: $allnones;
-  transform: translateX(-305%);
-  transition: transform ease-out;
-  transition-delay: 1s;
+  transform: translateX(0%);
+  animation-name: lists;
+  animation-duration: 2s;
+}
+
+@keyframes lists {
+  0% {
+    left: -200px;
+    right: 200px;
+  }
+  25% {
+    left: -100px;
+    right: 100px;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+  }
 }
 
 .bold1 {
@@ -71,7 +107,6 @@
 }
 
 @media (min-width: $querry) {
-
   .masthead__icon--menu {
     display: $allnones;
   }
@@ -90,7 +125,7 @@
     list-style: $allnones;
     margin-right: calc(var(--pixels) - var(--min-width));
   }
-  
+
   .lists > li > a {
     font-weight: 700;
     font-size: calc(var(--pixels) - 48px);
