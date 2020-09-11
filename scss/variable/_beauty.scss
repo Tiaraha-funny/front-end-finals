@@ -19,15 +19,15 @@
 
 .heading > p {
   font-size: calc(var(--min-width) + 2px);
-  line-height: calc(var(--min-width) + 16px);
-  padding-block-end: calc(var(--min-width) + 16px);
+  line-height: calc(var(--min-width) * 2);
+  padding-block-end: calc(var(--min-width) * 2);
 }
 
 @media (min-width: $querry) {
   .heading > h2 {
-    width: 479px;
-    font-size: 72px;
-    line-height: 80px;
+    width: calc(var(--width-P) + 129px);
+    font-size: var(--height);
+    line-height: calc(var(--min-width) * 5);
   }
 
   .slider {
@@ -35,7 +35,7 @@
   }
   
   .first__section {
-    padding-inline-end: calc(var(--min-width) + 48px);
-    padding-inline-start: calc(var(--min-width) + 48px);
+    padding-inline-end: calc(var(--min-width) * 5);
+    padding-inline-start: calc(var(--min-width) * 5);
   }
 }
