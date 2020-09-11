@@ -1,12 +1,12 @@
 .second__section {
   background-color: #ffdd78;
-  padding: 1rem;
-  padding-block-start: 80px;
+  padding: var(--min-width);
+  padding-block-start: calc(var(--min-width) * 5);
 }
 
 .latest__heading > a {
   font-size: var(--min-width);
-  line-height: 24px;
+  line-height: var(--height);
   letter-spacing: 0.3em;
   text-transform: uppercase;
   text-decoration: none;
@@ -15,21 +15,21 @@
 
 .latest__heading > h3 {
   font-size: 40px;
-  line-height: 48px;
-  max-width: 314px;
+  line-height: calc(var(--min-width) * 3);
+  max-width: calc(var(--min-width) - 36px);
 }
 
 .latest__email {
   font-family: "DM Sans";
   font-weight: 700;
-  font-size: 12px;
-  line-height: 60px;
+  font-size: calc(var(--min-width) + 4px);
+  line-height: calc(var(--pixels) - 4px);
   text-transform: uppercase;
   color: #000000;
 }
 
 .latest__email ~ input {
-  width: 100%;
+  width: var(--width);
   padding: var(--min-width);
   background: #ffffff;
   border: 1px solid #dadada;
@@ -48,7 +48,7 @@
   width: 50%;
   font-weight: 700;
   font-size: var(--min-width);
-  line-height: 24px;
+  line-height: var(--height);
   text-align: center;
   color: #ffffff;
   margin-block-start: var(--min-width);
@@ -56,29 +56,29 @@
 
 @media (min-width: $querry) {
   .latest__heading > h3 {
-    font-size: 52px;
-    line-height: 64px;
-    max-width: 403px;
+    font-size: calc(var(--pixels) - 12px);
+    line-height: var(--pixels);
+    max-width: calc(var(--width-P) + 53px);
   }
 
   .second__section {
     @include flex;
-    padding-inline-end: 64px;
-    padding-inline-start: 63px;
+    padding-inline-end: var(--pixels);
+    padding-inline-start: calc(var(--pixels) - 1px);
   }
 
   .second__section > form {
-    margin-block-start: 57px;
+    margin-block-start: calc(var(--pixels) - 7px);
   }
 
   .latest__email ~ input {
-    width: 445px;
+    width: calc(var(--width-P) + 95px);
   }
 
   .second__section > button {
-    max-width: 222px;
-    max-height: 47px;
-    margin-block-start: 117px;
-    margin-inline-start: -9rem;
+    max-width: calc(var(--width-P) - 128px);
+    max-height: calc(var(--pixels) - 17px);
+    margin-block-start: calc(var(--pixels) + 53px);
+    margin-inline-start: -144px;
   }
 }
