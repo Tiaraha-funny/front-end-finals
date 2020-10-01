@@ -13,6 +13,10 @@
   border-radius: 6px;
 }
 
+picture::-webkit-scrollbar {
+  display: none;
+}
+
 .ChoosenImg > img {
   width: var(--width);
   border-radius: 6px;
