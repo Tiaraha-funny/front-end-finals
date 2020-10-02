@@ -54,6 +54,14 @@ span {
   visibility: hidden;
 }
 
+footer,
+header,
+.third__section,
+.second__section,
+.section__container {
+  display: none;
+}
+
 @media (min-width: $querry) {
   h1 {
     font-size: calc(var(--min-width) + 24px);
